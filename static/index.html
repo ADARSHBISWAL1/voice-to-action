@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+  <style>
+    .demo-credit {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .demo-credit:hover {
+      background: rgba(0, 0, 0, 0.9);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <a href="https://github.com/ADARSHBISWAL1" target="_blank" class="demo-credit">
+    Demo project by ADARSHBISWAL1
+  </a>
+  
+  <div class="bg-gradient"></div>
+  <div class="noise"></div>
+
+  <main class="shell">
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="url(#logoGradient)" stroke="url(#logoGradient)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="9" r="2" fill="url(#logoGradient)" opacity="0.8"/>
+            <path d="M8 14C8 14 10 16 12 16C14 16 16 14 16 14" stroke="url(#logoGradient)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <path d="M7 18C7 18 9.5 20 12 20C14.5 20 17 18 17 18" stroke="url(#logoGradient)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
+        <h1>New</h1>
+      </div>
+      <p class="tagline">Speak a command. Your PC runs it—open apps, YouTube, and more.</p>
+    </header>
+
+    <section class="panel" aria-live="polite">
+      <div class="status-row">
+        <span id="micStatus" class="badge badge-idle">Microphone idle</span>
+        <span id="serverStatus" class="badge badge-warn">Checking server…</span>
+      </div>
+
+      <div class="pulse-wrap">
+        <button type="button" id="btnListen" class="btn-main" aria-pressed="false">
+          <span class="btn-ring"></span>
+          <span class="btn-inner">
+            <svg class="mic-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z" />
+              <path d="M19 10v1a7 7 0 0 1-14 0v-1" />
+              <line x1="12" y1="18" x2="12" y2="22" />
+              <line x1="8" y1="22" x2="16" y2="22" />
+            </svg>
+            <span id="btnLabel">Click to start listening</span>
+          </span>
+        </button>
+      </div>
+
+      <label class="field">
+        <span class="field-label">Or type your command</span>
+        <div class="field-row">
+          <input type="text" id="textCmd" placeholder='e.g. Open YouTube and play lo-fi music' autocomplete="off" />
+          <button type="button" id="btnSend" class="btn-send">Run</button>
+        </div>
+      </label>
+
+      <div class="transcript-box">
+        <span class="transcript-label">Heard</span>
+        <p id="transcript" class="transcript">—</p>
+      </div>
+
+      <div class="result-box">
+        <span class="result-label">Result</span>
+        <p id="result" class="result">—</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <a href="https://github.com/ADARSHBISWAL1" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none; color: var(--muted); transition: color 0.3s ease;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          <span>Fully reserved by Adarsh</span>
+        </a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
