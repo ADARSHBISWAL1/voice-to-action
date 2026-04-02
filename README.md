@@ -1,13 +1,31 @@
-# 🚧 IN PROGRESS 🚧
+<div align="center">
 
 # 🎤 Voice Assistant - AI-Powered Voice Control
 
+**Transform your PC into a smart, voice-controlled powerhouse**
+
+[![Status](https://img.shields.io/badge/Status-In%20Development-yellow?style=for-the-badge)]()
+[![Voice Assistant](https://img.shields.io/badge/Voice-Assistant-blue?style=for-the-badge)]()
+[![Python](https://img.shields.io/badge/Python-3.8%2B-green?style=for-the-badge&logo=python)]()
+[![Flask](https://img.shields.io/badge/Flask-Web%20Framework-red?style=for-the-badge&logo=flask)]()
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)]()
+
+</div>
+
 A sophisticated voice assistant that responds to your commands, plays music, controls your system, and learns from your voice patterns.
 
-![Voice Assistant](https://img.shields.io/badge/Voice-Assistant-AI%20Powered-blue)
-![Python](https://img.shields.io/badge/Python-3.8%2B-green)
-![Flask](https://img.shields.io/badge/Flask-Web%20Framework-red)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+## 📑 Table of Contents
+
+- [Features](#-features)
+- [Quick Start](#-quick-start)
+- [Voice Commands](#-voice-commands)
+- [Training](#-training-your-voice-model)
+- [Project Structure](#-project-structure)
+- [Configuration](#-configuration)
+- [Privacy & Security](#️-privacy--security)
+- [Troubleshooting](#-troubleshooting)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## ✨ Features
 
@@ -250,10 +268,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🎉 Enjoy Your Voice Assistant!
+## 🎉 Get Started
 
 Transform your PC into a smart, voice-controlled powerhouse. Just say "**New**" and let the magic happen! ✨
 
 ---
 
-*Fully reserved by Adarsh* | *Demo project by ADARSHBISWAL1*
+<div align="center">
+
+**Made with ❤️ by [ADARSHBISWAL1](https://github.com/ADARSHBISWAL1)**
+
+⭐ Star this repo if you find it helpful!
+
+</div>
